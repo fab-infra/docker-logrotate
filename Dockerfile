@@ -1,5 +1,5 @@
-# Logrotate based on openSUSE Leap 15.6
-FROM ghcr.io/fab-infra/base-image:opensuse15.6
+# Logrotate based on openSUSE Leap 16.0
+FROM ghcr.io/fab-infra/base-image:opensuse16.0
 
 # Logrotate
 RUN zypper in -y logrotate &&\
