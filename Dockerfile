@@ -4,7 +4,7 @@ FROM ghcr.io/fab-infra/base-image:opensuse16.0
 # Logrotate
 RUN zypper in -y logrotate &&\
 	zypper clean -a &&\
-	rm -f /etc/logrotate.d/*
+	rm -f /usr/etc/logrotate.d/*
 
 # Files
 COPY ./root /
